@@ -13,6 +13,7 @@ import django.core.checks.security.csrf  # NOQA isort:skip
 import django.core.checks.security.sessions  # NOQA isort:skip
 import django.core.checks.templates  # NOQA isort:skip
 import django.core.checks.urls  # NOQA isort:skip
+import django.core.checks.i18n  # NOQA isort:skip
 
 
 __all__ = [
