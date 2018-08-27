@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.core.checks.i18n_settings import (
-   check_setting_language_code
+    check_setting_language_code
 )
 from django.test import SimpleTestCase
 from django.test.utils import override_settings
@@ -36,7 +36,7 @@ class CheckI18nSettings(SimpleTestCase):
 
     @override_settings(ROOT_URLCONF='check_framework.i18n_settings.invalid_language_code_format_cc')
     def test_invalid_language_code_format_ll_cc(self):
-        invalid_codes = ["en-US", "enus", "EN-US", "en-", "en-uS", "en_us"]
+        invalid_codes = ["en-US", "enus", "EN-US", "en-", "en-uS", "en_us", "en_US"]
         for code in invalid_codes:
             settings.LANGUAGE_CODE = code
             result = check_setting_language_code(None)
