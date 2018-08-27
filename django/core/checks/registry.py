@@ -16,7 +16,7 @@ class Tags:
     signals = 'signals'
     templates = 'templates'
     urls = 'urls'
-    i18n = 'i18n'
+    i18n_settings = 'i18n_settings'
 
 
 class CheckRegistry:
